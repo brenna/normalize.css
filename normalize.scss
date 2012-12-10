@@ -8,6 +8,23 @@
 // ==========================================================================
 // customize your normalize defaults here:
 
+$h1Size:  2em;
+$preSize: 1em;          //also applies to code, kbd, & samp elements
+$smallSize: 80%;
+
+$subSupSize: 75%;
+$subOffset: -0.5em;
+$supOffset: -0.25em;
+
+$focusOutline: thin dotted; 
+
+$markColor: #000;
+$markBgColor: #ff0;
+
+$fieldsetBorder: 1px solid #c0c0c0;
+$fieldsetMargin: 0 2px;
+$fieldsetPadding: 0.35em 0.625em 0.75em;
+
 
 // ==========================================================================
 // STOP CHANGING THINGS NOW! 
@@ -90,7 +107,7 @@ body {
 // Addresses `outline` inconsistency between Chrome and other browsers.
 
 a:focus {
-    outline: thin dotted;
+    outline: $focusOutline;
 }
 
 
@@ -110,7 +127,7 @@ a:hover {
 // Safari 5, and Chrome.
 
 h1 {
-    font-size: 2em;
+    font-size: $h1Size;
 }
 
 
@@ -139,8 +156,8 @@ dfn {
 // Addresses styling not present in IE 8/9.
 
 mark {
-    background: #ff0;
-    color: #000;
+    background: $markBgColor;
+    color: $markColor;
 }
 
 
@@ -152,7 +169,7 @@ kbd,
 pre,
 samp {
     font-family: monospace, serif;
-    font-size: 1em;
+    font-size: $preSize;
 }
 
 
@@ -175,7 +192,7 @@ q {
 // Addresses inconsistent and variable font size in all browsers.
 
 small {
-    font-size: 80%;
+    font-size: $smallSize;
 }
 
 
@@ -183,18 +200,18 @@ small {
 
 sub,
 sup {
-    font-size: 75%;
+    font-size: $subSupSize;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
 }
 
 sup {
-    top: -0.5em;
+    top: $supOffset;
 }
 
 sub {
-    bottom: -0.25em;
+    bottom: $subOffset;
 }
 
 // ==========================================================================
@@ -234,9 +251,9 @@ figure {
 // Define consistent border, margin, and padding.
 
 fieldset {
-    border: 1px solid #c0c0c0;
-    margin: 0 2px;
-    padding: 0.35em 0.625em 0.75em;
+    border: $fieldsetBorder;
+    margin: $fieldsetMargin;
+    padding: $fieldsetPadding;
 }
 
 
