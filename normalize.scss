@@ -25,6 +25,8 @@ $fieldsetBorder: 1px solid #c0c0c0;
 $fieldsetMargin: 0 2px;
 $fieldsetPadding: 0.35em 0.625em 0.75em;
 
+$strongWeight: 500;     //with some webfonts, "bold" is too bold!
+
 
 // ==========================================================================
 // STOP CHANGING THINGS NOW! 
@@ -142,7 +144,7 @@ abbr[title] {
 
 b,
 strong {
-    font-weight: bold;
+    font-weight: $strongWeight;
 }
 
 

@@ -1,42 +1,27 @@
-# normalize.css v2.0.1
+# normalize.css v2.0.1 - Sassified!
 
-Normalize.css is a customisable CSS file that makes browsers render all
-elements more consistently and in line with modern standards. We researched the
-differences between default browser styles in order to precisely target only
-the styles that need normalizing.
+A Sass version of normalize.css.
 
-[Check out the demo](http://necolas.github.com/normalize.css/2.0.1/test.html)
+## Why did I make this?
 
-## What does it do?
+Normalize.css is my go to browser baseline (instead of a traditional kill everything reset), but I also like writing all my css with Sass. I often found myself overwriting normalize settings in other scss files, or having to modify the normalize file without having access to my usual Sass variables. That defeated the purpose of using Sass to help organize and reduce the size of my stylsheets. So I converted several baseline values that you might want to customize into Sass variables.
 
-* Preserves useful defaults, unlike many CSS resets.
-* Normalizes styles for a wide range of elements.
-* Corrects bugs and common browser inconsistencies.
-* Improves usability with subtle improvements.
-* Explains what code does using detailed comments.
+## Usage
 
-## How to use it
+@import normalize.sccs as you see fit in your Sass project, though you'll typically do that at the beginning. If you're happy with normalize's defaults, you're done! If you'd like to customize, simply change the variable values found at the beginning of normalize.scss. If you've
 
-Normalize.css is intended to be used as an alternative to CSS resets.
+## Browser Support
 
-It's suggested that you read the `normalize.css` file and consider customising
-it to meet your needs. Alternatively, include the file in your project and
-override the defaults later in your CSS.
+Same as normalize.css:
 
-## Browser support
-
+* Browser support
 * Google Chrome
 * Mozilla Firefox 4+
 * Apple Safari 5+
 * Opera 12+
 * Internet Explorer 8+
 
-## Contribute
+## Futher Details
 
-Please read my [issue
-guidelines](https://github.com/necolas/issue-guidelines).
-
-## Acknowledgements
-
-Normalize.css is a project by [Nicolas Gallagher](http://github.com/necolas)
-and [Jonathan Neal](http://github.com/jonathantneal).
+Check out the original [normalize.css documentation](https://github.com/necolas/normalize.css/
+) for more details on how it works.
